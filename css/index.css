@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(177, 173, 173);
+    transition: 0.5s;
+}
+
+
+#aboutus {
+    color: rgb(67, 67, 68);
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-left: 12px solid rgb(5, 80, 34);
+    padding-left: 15px;
+}
+
+ul {
+    list-style:none;
+}
+
+#aboutus2 {
+    color: rgb(67, 67, 68);
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-right: 12px solid rgb(5, 80, 34);
+    padding-right: 15px;
+}
+.card a {
+    text-decoration: none;
+}
+
+.card {
+    width: 180px;
+    height: 250px;
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.card:hover {
+    background-color: rgb(202, 200, 198);
+    transform:translateY(-10px);
+    transition: 0.5s;
+}
+
+
+
+.card p {
+    padding-top: 35px;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    font-weight: 600;
+    color: rgb(10, 83, 3);
+}
+
+.card img {
+    width: 60px;
+    align-items: center;
+    
+}
+
+
+.callus img {
+    right: 0;
+    padding-right: 10px;
+    position: relative;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+}
