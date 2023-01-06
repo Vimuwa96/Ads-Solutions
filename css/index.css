@@ -42,6 +42,30 @@ ul {
     border-right: 12px solid rgb(5, 80, 34);
     padding-right: 15px;
 }
+
+#aboutus3 {
+    color: rgb(67, 67, 68);
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-right: 15px;
+}
+
+@media screen and (max-width:500px) {
+    #aboutus {
+        font-size: 25px;
+    }
+
+    #aboutus2 {
+        font-size: 25px;
+    }
+
+    #aboutus3 {
+        font-size: 25px;
+    }
+
+}
+
 .card a {
     text-decoration: none;
 }
@@ -52,12 +76,15 @@ ul {
     display: flex;
     cursor: pointer;
     padding-bottom: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card:hover {
     background-color: rgb(202, 200, 198);
     transform:translateY(-10px);
     transition: 0.5s;
+
 }
 
 
@@ -101,4 +128,44 @@ ul {
     text-transform: uppercase;
     font-size: 35px;
     font-weight: 600;
+}
+
+#swiper {
+    height: 100vh;
+}
+
+.counter{
+    font-size: 35px;
+    padding-right: 25px;
+    color: rgb(1, 41, 28);
+    font-weight: 600;
+}
+
+
+
+#footer .container {
+    color: aliceblue;
+}
+
+#social {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(54, 47, 47);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(169, 176, 176);
+}
+
+
+#social:hover{
+    background-color: rgb(7, 115, 7);
+    color: aliceblue;
+}
+
+
+#icons a {
+    text-decoration: none;
 }
