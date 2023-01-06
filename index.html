@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ads Solutions</title>
 
-    <!--Swipper-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Fontawsome CDN-->
+    <script src="https://kit.fontawesome.com/1a3b5235e0.js" crossorigin="anonymous"></script>
+
+    <!--CounterUp-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
 
     <!--Bootstrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!--External CSS Files-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/containers.css">
     <link rel="stylesheet" href="css/typewritter.css">
     <link rel="stylesheet" href="css/swipper.css">
+    <link rel="stylesheet" href="css/media.css">
+
 
 </head>
 
@@ -24,7 +33,7 @@
     <!--Navigation Bar Start-->
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Ads Solutions </a>
+            <a class="navbar-brand" href="index.html">Ads Solutions </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -44,12 +53,9 @@
                             Services
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#webDesigning">Web Designing</a></li>
+                            <li><a class="dropdown-item" href="#GraphicDesigning">Graphic Designing</a></li>
+                            <li><a class="dropdown-item" href="#branding">Branding</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -76,7 +82,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 d-none d-md-block">
-                    <img src="img/main.webp" alt="" style="width: 300px; opacity: 80%;">
+                    <img src="img/main.webp" alt="" style="width: 300px; z-index: 2;">
                 </div>
 
             </div>
@@ -84,7 +90,7 @@
     </div>
 
     <!--Hero section Start-->
-    <a href="0764906767" class="callus"><img src="img/whatsapp.png" alt=""></a>
+    <a href="https://wa.me/+94764906767" class="callus"><img src="img/whatsapp.png" alt=""></a>
 
     <!--Main Header Start-->
     <div id="backimg">
@@ -98,7 +104,12 @@
                 <div class="col-md-8">
                     <ul id="list">
                         <li>
-                            <p> <span><img src="img/check.png" alt="" style="width: 15px;"></span> Lorem ipsum dolor sit
+
+                            <p style="z-index: 5;"> <span><img src="img/check.png" alt="" style="width: 15px;"></span>
+
+
+
+                                Lorem ipsum dolor sit
                                 amet
                                 consectetur
                                 adipisicing elit. Ipsa
@@ -107,10 +118,12 @@
                                 iste,
                                 nisi
                                 optio! Exercitationem nulla ipsa atque.</p>
+
                         </li>
 
                         <li>
-                            <p> <span><img src="img/check.png" alt="" style="width: 15px;"></span> Lorem ipsum dolor sit
+                            <p style="z-index: 5;"> <span><img src="img/check.png" alt="" style="width: 15px;"></span>
+                                Lorem ipsum dolor sit
                                 amet
                                 consectetur
                                 adipisicing elit. Ipsa
@@ -147,28 +160,38 @@
                     <div class="col-md-7">
                         <div class="row">
                             <div class="col-md-4 d-flex justify-content-center g-3">
-                                <div class="card">
-                                    <p>Web Designing
-                                        <img src="img/web.png" alt="" class="pt-3">
-                                    </p>
+                                <div data-aos="fade-up">
+                                    <div class="card">
+                                        <a href="#webDesigning">
+                                            <p>Web Designing
+                                                <img src="img/web.png" alt="" class="pt-3">
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-md-4 d-flex justify-content-center g-3">
-                                <div class="card">
-                                    <a href="#GraphicDesigning">
-                                        <p>Graphic Designing
-                                            <img src="img/design.png" alt="" class="pt-3">
-                                        </p>
-                                    </a>
+                                <div data-aos="fade-up">
+                                    <div class="card">
+                                        <a href="#GraphicDesigning">
+                                            <p>Graphic Designing
+                                                <img src="img/design.png" alt="" class="pt-3">
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-md-4 d-flex justify-content-center g-3">
-                                <div class="card">
-                                    <p>Branding & Adverticing
-                                        <img src="img/adver.png" alt="" class="pt-3">
-                                    </p>
+                                <div data-aos="fade-up">
+                                    <div class="card">
+                                        <a href="#branding">
+                                            <p>Branding & Adverticing
+                                                <img src="img/adver.png" alt="" class="pt-3">
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -178,11 +201,15 @@
                         <img src="img/24-hours.gif" alt="" style="height: 150px;"><span id="aboutus2">
                             Services</span>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat inventore itaque
-                            eos
-                            aperiam? Doloremque nam iste, reprehenderit debitis, enim nulla incidunt corporis cupiditate
-                            rem,
-                            consequatur maiores velit eum laboriosam.</p>
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat inventore
+                                itaque
+                                eos
+                                aperiam? Doloremque nam iste, reprehenderit debitis, enim nulla incidunt corporis
+                                cupiditate
+                                rem,
+                                consequatur maiores velit eum laboriosam.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -193,6 +220,7 @@
         <!--Second Section End-->
 
         <!--Third section Start-->
+        <div class="pt-5" id="webDesigning"></div>
         <div class="container pt-5">
             <p> <span id="aboutus">Web Designing</span></p>
             <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur accusamus quaerat est
@@ -201,85 +229,179 @@
                 sunt
                 voluptatem alias ad.</p>
             <ul id="list" style="line-height: 2;">
-                <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Full Resposive designs</li>
-                <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Unlimited Revisions</li>
-                <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Hosting & Domain Purchasing
-                </li>
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Full Resposive designs
+                    </li>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1500">
+                    <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Unlimited Revisions</li>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="2000">
+                    <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Hosting & Domain
+                        Purchasing</li>
+                </div>
             </ul>
+            <a href="pages/web.html" class="btn btn-success" id="seemore">See more</a>
         </div>
+
+        <div class="pt-5" id="GraphicDesigning"></div>
         <!--Third section End-->
 
         <!--Fourth section Start-->
-        <div class="container pt-3" id="GraphicDesigning">
+        <div class="container pt-3">
             <p> <span id="aboutus">Graphic Designing</span></p>
             <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur accusamus quaerat est
                 nulla
                 quis accusantium expedita laudantium illo? Beatae animi fugiat sint tempora numquam recusandae ducimus
                 sunt
                 voluptatem alias ad.</p>
-            <ul id="list" style="line-height: 2;">
-                <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Full Resposive designs</li>
-                <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Unlimited Revisions</li>
-                <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Hosting & Domain Purchasing
-                </li>
-            </ul>
+                <ul id="list" style="line-height: 2;">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Full Resposive designs
+                        </li>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                        <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Unlimited Revisions</li>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000">
+                        <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Hosting & Domain
+                            Purchasing</li>
+                    </div>
+                </ul>
 
+            <a href="pages/graphic.html" class="btn btn-success" id="seemore">See more</a>
+            <div class="pt-5" id="branding"></div>
         </div>
+
         <!--Fourth section End-->
 
         <!--Fifth section Start-->
-        <div class="container pt-3">
+        <div class="container pb-5 pt-3">
             <p> <span id="aboutus">Branding & Adverticing</span></p>
             <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur accusamus quaerat est
                 nulla
                 quis accusantium expedita laudantium illo? Beatae animi fugiat sint tempora numquam recusandae ducimus
                 sunt
                 voluptatem alias ad.</p>
-            <ul id="list" style="line-height: 2;">
-                <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Full Resposive designs</li>
-                <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Unlimited Revisions</li>
-                <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Hosting & Domain Purchasing
-                </li>
-            </ul>
-
+                <ul id="list" style="line-height: 2;">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Full Resposive designs
+                        </li>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                        <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Unlimited Revisions</li>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000">
+                        <li><span><img src="img/verified.gif" alt="" style="width: 25px;"></span> Hosting & Domain
+                            Purchasing</li>
+                    </div>
+                </ul>
+                
+            <a href="pages/brand.html" class="btn btn-success " id="seemore">See more</a>
         </div>
         <!--Fifth section End-->
 
 
         <!--sixth section start-->
-        <div class="container pb-5 d-flex justify-content-center" id="swiper">
-            <div class="row">
-                <p class="ourteam">Our Team</p>
+        <div class="container pt-5 pb-5">
 
+            <p> <span id="aboutus3" class=" d-flex justify-content-center">Achivements</span></p>
 
+            <div class="row pt-5">
+
+                <div class="col-md-4 d-flex justify-content-center pb-2">
+                    <img src="img/cutomers.gif" alt="" style="width: 100px;">
+                    <div class="counter justify-content-center" data-target="100"></div>
+                    <p>Customers</p>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center pb-2">
+                    <img src="img/browser.gif" alt="" style="width: 100px;">
+                    <div class="counter justify-content-center" data-target="200"></div>
+                    <p>Pages</p>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center pb-2">
+                    <img src="img/trophy.gif" alt="" style="width: 100px;">
+                    <div class="counter justify-content-center" data-target="150"></div>
+                    <p>Projects</p>
+                </div>
 
             </div>
         </div>
+        <!--sixth section End-->
+
+        <!--7th section Start-->
+
+        <div class="container-fluid bg-dark pt-5" id="footer">
+
+            <div class="container pt-3" style="color: white;">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-start">
+                        <p>Ads Solutions PVT LTD <br> No : 350/1A, School lane, Kalapaluwawa, Rajagiriya
+                            <br>Colombo, Sri Lanka
+                            <br>
+                            Tel : 0764906767 /
+                        </p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="row" id="icons">
+                            <div class="col pl-5"><a href=""><i class="fa-brands fa-facebook fa-2x" id="social"></i></a>
+                            </div>
+                            <div class="col"><a href=""><i class="fa-brands fa-twitter fa-2x" id="social"></i></a></div>
+                            <div class="col"><a href=""><i class="fa-brands fa-instagram fa-2x" id="social"></i></a>
+                            </div>
+                            <div class="col"><a href=""><i class="fa-brands fa-linkedin fa-2x" id="social"></i></a>
+                            </div>
+                            <div class="col"><a href=""><i class="fa-solid fa-earth-americas fa-2x" id="social"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <center>
+                    <div class="row pt-5">
+                        <p>© Ads Solutions. All Rights Reserved. | Privacy Policy | Trademarks | Legal</p>
+                    </div>
+                </center>
+            </div>
+
+
+        </div>
+
+        <!--7th section End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
     <script src="js/typewritter.js"></script>
     <script src="js/swipper.js"></script>
